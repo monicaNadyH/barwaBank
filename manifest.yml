@@ -1,0 +1,28 @@
+---
+declared-services:
+  ahli:
+    label: conversation
+    plan: free
+  wbc-discovery-service:
+    label: discovery
+    plan: lite
+  wbc-natural-language-understanding-service:
+    label: natural-language-understanding
+    plan: free
+  wbc-tone-analyzer-service3:
+    label: tone_analyzer
+    plan: lite
+applications:
+- path: .
+  memory: 256M
+  instances: 1
+  name: GBK BOT
+  disk_quota: 256M
+  random-route: true
+  timeout: 180
+  services:
+  - barwa
+  - wbc-tone-analyzer-service3
+  - wbc-natural-language-understanding-service
+  - wbc-discovery-service
+  - wbc-personality-service
