@@ -174,3 +174,23 @@ var personality_insights = new PersonalityInsightsV3({
 2. bluemix api https://api.ng.bluemix.net (if deployed in US South)
 3. bluemix login -u UserName -o org_name -s space_name
 4. bluemix app push appName
+
+
+
+
+## Import the json workspaces to Watson Assistant
+1. Go to bluemix.net
+2. Create a Watson Assistant service by going to the Catalog and look for Watson Assistant. Put a name for the service and click create
+3. After the service is created you'll see "Launch Tool" button. Click on that button
+4. You'll be taken to a URL like: https://assistant-us-east.watsonplatform.net/us-east.........
+5. Go to Workspaces by clicking on Workspaces button
+6. Click the import button and drag the JSON files or choose them from a folder you have.
+
+
+## Upload a document to discovery service
+1. Go to bluemix.net
+2. Create a Watson Discovery service by going to the Catalog and look for Watson Discovery. Put a name for the service and click create
+3. After the service is created you'll see "Launch Tool" button. Click on that button
+4. Create a collection
+5. Upload your documents to the discovery service
+
